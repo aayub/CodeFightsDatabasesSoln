@@ -1,0 +1,13 @@
+1) volleyballResults
+CREATE PROCEDURE volleyballResults()
+
+SELECT *
+FROM results
+ORDER BY wins;
+
+2) mostExpensive
+CREATE PROCEDURE mostExpensive()
+
+SELECT name 
+FROM Products 
+ORDER BY price * quantity DESC, name ASC limit 1; 
